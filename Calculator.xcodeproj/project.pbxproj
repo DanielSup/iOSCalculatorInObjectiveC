@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4EB725A821CF7FC000AD5987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB725A721CF7FC000AD5987 /* AppDelegate.m */; };
 		4EB725AB21CF7FC000AD5987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB725AA21CF7FC000AD5987 /* ViewController.m */; };
-		4EB725AE21CF7FC000AD5987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB725AC21CF7FC000AD5987 /* Main.storyboard */; };
 		4EB725B021CF7FCE00AD5987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB725AF21CF7FCE00AD5987 /* Assets.xcassets */; };
 		4EB725B321CF7FCE00AD5987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB725B121CF7FCE00AD5987 /* LaunchScreen.storyboard */; };
 		4EB725B621CF7FCE00AD5987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB725B521CF7FCE00AD5987 /* main.m */; };
+		4EB725BC21CFB3C200AD5987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB725AC21CF7FC000AD5987 /* Main.storyboard */; };
+		4EF1BF4721D0C5D80096C4E1 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1BF4621D0C5D80096C4E1 /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4EB725B221CF7FCE00AD5987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EB725B421CF7FCE00AD5987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB725B521CF7FCE00AD5987 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EF1BF4521D0C5D80096C4E1 /* CalculatorBrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		4EF1BF4621D0C5D80096C4E1 /* CalculatorBrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				4EB725A921CF7FC000AD5987 /* ViewController.h */,
 				4EB725AA21CF7FC000AD5987 /* ViewController.m */,
 				4EB725AC21CF7FC000AD5987 /* Main.storyboard */,
+				4EF1BF4521D0C5D80096C4E1 /* CalculatorBrain.h */,
+				4EF1BF4621D0C5D80096C4E1 /* CalculatorBrain.m */,
 				4EB725AF21CF7FCE00AD5987 /* Assets.xcassets */,
 				4EB725B121CF7FCE00AD5987 /* LaunchScreen.storyboard */,
 				4EB725B421CF7FCE00AD5987 /* Info.plist */,
@@ -128,9 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB725BC21CFB3C200AD5987 /* Main.storyboard in Resources */,
 				4EB725B321CF7FCE00AD5987 /* LaunchScreen.storyboard in Resources */,
 				4EB725B021CF7FCE00AD5987 /* Assets.xcassets in Resources */,
-				4EB725AE21CF7FC000AD5987 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,7 @@
 			files = (
 				4EB725AB21CF7FC000AD5987 /* ViewController.m in Sources */,
 				4EB725B621CF7FCE00AD5987 /* main.m in Sources */,
+				4EF1BF4721D0C5D80096C4E1 /* CalculatorBrain.m in Sources */,
 				4EB725A821CF7FC000AD5987 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +291,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,7 +309,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
